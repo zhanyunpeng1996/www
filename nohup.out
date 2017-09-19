@@ -1,0 +1,13 @@
+
+Error: class uri 'gevent' invalid or not found: 
+
+[Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 134, in load_class
+    mod = import_module('.'.join(components))
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/ggevent.py", line 22, in <module>
+    raise RuntimeError("You need gevent installed to use this worker.")
+RuntimeError: You need gevent installed to use this worker.
+]
+
