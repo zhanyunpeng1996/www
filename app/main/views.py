@@ -12,6 +12,16 @@ def welcome():
     return render_template('welcome.html')
 
 
+@main.route('/register')
+def register():
+    return render_template('register.html')
+
+
+@main.route('/acm')
+def acm():
+    return render_template('acm.html')
+
+
 @main.route('/', methods=['GET', 'POST'])
 def index():
     form = NameForm()
